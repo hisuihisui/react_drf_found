@@ -1,16 +1,17 @@
 # GET http://127.0.0.1:8000/admin
 
-# POST http://127.0.0.1:8000/auth/ HTTP/1.1
-# content-type: application/json
+# Tokenをgetする
+POST http://127.0.0.1:8000/auth/ HTTP/1.1
+content-type: application/json
 
-# {
-#     "username": "test1",
-#     "password": "test1"
-# }
+{
+    "username": "test1",
+    "password": "test1"
+}
 
 
 # 019eb5252f457af931968237c3c14a944c43366f
 
 # GET http://127.0.0.1:8000/api/tasks/
-GET http://127.0.0.1:8000/api/tasks/3
-Authorization: Token 019eb5252f457af931968237c3c14a944c43366f
+# GET http://127.0.0.1:8000/api/tasks/3
+# Authorization: Token 019eb5252f457af931968237c3c14a944c43366f
